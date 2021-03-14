@@ -4591,6 +4591,7 @@ void lcd_quick_feedback(const bool clear_buttons) {
       #endif
       MENU_ITEM(function, MSG_FILAMENT_CHANGE_OPTION_RESUME, lcd_advanced_pause_resume_print);
       MENU_ITEM(function, MSG_FILAMENT_CHANGE_OPTION_PURGE, lcd_advanced_pause_extrude_more);
+      HOTEND_STATUS_ITEM(); // we decide here based on temperature
       END_MENU();
     }
 
