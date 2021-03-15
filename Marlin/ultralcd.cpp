@@ -749,7 +749,7 @@ void lcd_status_screen() {
  */
 void lcd_reset_status() {
   static const char paused[] PROGMEM = MSG_PRINT_PAUSED;
-  static const char printing[] PROGMEM = MSG_PRINTING;
+  static const char printing[] PROGMEM = MSG_PREPARE;
   static const char welcome[] PROGMEM = WELCOME_MSG;
   const char *msg;
   if (print_job_timer.isPaused())
